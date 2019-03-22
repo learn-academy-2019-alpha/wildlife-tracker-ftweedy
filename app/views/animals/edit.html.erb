@@ -1,0 +1,14 @@
+<h1>Edit Animal</h1>
+
+<%= form_for @animal, url: animal_path ,method: :put do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %> </br>
+
+<%= f.label :latin_name %>
+<%= f.text_field :latin_name %> </br>
+
+<%= f.label :kingdom %>
+<%= f.text_field :kingdom %> </br>
+
+<%= f.submit 'Update Animal'%>
+<% end %>

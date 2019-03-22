@@ -1,0 +1,19 @@
+<h1>Edit Sighting</h1>
+
+<%= form_for @sighting, url: sighting_path ,method: :put do |f| %>
+<%= f.label :time %>
+<%= f.time_field :time %> </br>
+
+<%= f.label :date %>
+<%= f.date_field :date %> </br>
+
+<%= f.label :latitude %>
+<%= f.text_field :latitude %> </br>
+
+<%= f.label :longitutde %>
+<%= f.text_field :longitude %> </br>
+
+<!--<%= f.hidden_field :animal_id, :value => @id %>-->
+
+<%= f.submit 'Update Sighting'%>
+<% end %>

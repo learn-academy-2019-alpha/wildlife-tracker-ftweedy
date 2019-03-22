@@ -1,0 +1,8 @@
+<h1>Welcome to ANIMAL TRACKER 3000- Sightings.  Get ready to sight some aminals.</h1>
+<% if @sightings.present? %>
+    <% @sightings.all.each do |sighting| %>
+        <%= sighting.id%> <%= sighting.animal_id %> Date: <%= sighting.date %>.  Time: <%= sighting.time %>.  Latitude: <%= sighting.latitude %>. Longitude: <%= sighting.longitude %> 
+        <%= link_to "Update", edit_sighting_path(sighting) %> <%= link_to "Delete", sighting_path(sighting), method: :delete %><br/>
+    <%end%>
+<%end%>
+<%= link_to "Add Sighting", new_sighting_path(@animal)%>

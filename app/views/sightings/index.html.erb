@@ -1,0 +1,11 @@
+<h1>Welcome to ANIMAL TRACKER 3000- Sightings.  Get ready to sight some aminals.</h1>
+<!--<% if @animals.present? %>-->
+<!--    <% @animals.animal_id.all.each do |animal| %>-->
+<!--        Common Name: <%= animal.id%> <%= animal.name %>.  Latin Name: <%= animal.latin_name %>.  Kingdom: <%= animal.kingdom %> -->
+<!--        <%= link_to "Update", edit_animal_path(animal) %> <%= link_to "Delete", animal_path(animal), method: :delete %><br/>-->
+<!--    <%end%>-->
+<!--<%end%>-->
+
+<form action="/animals/new" method="get">
+    <input type="submit" value="Add Animal" />
+</form>
